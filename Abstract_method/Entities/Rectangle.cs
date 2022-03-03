@@ -22,5 +22,10 @@ namespace Abstract_method.Entities
             Width = width;
             Heigth = heigth;
         }
+
+        public override double Area()
+        {
+            return Width * Heigth;
+        }
     }
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Abstract_method.Entities.Enum
 {
-    enum Color : int
+    enum Color
     {
         Black,
-        Blue = 1,
-        Red = 2
+        Blue,
+        Red 
     }
 }

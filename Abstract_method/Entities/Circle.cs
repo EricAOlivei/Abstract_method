@@ -20,5 +20,10 @@ namespace Abstract_method.Entities
         {
             Radious = radius;
         }
+
+        public override double Area()
+        {
+            return Math.PI * Math.Pow(Radious, 2);
+        }
     }
 }

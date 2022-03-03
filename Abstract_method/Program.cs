@@ -13,10 +13,12 @@ namespace Abstract_method
             List<Shape> list = new List<Shape>();
 
             Console.Write("Enter the number of shapes: ");
-            int n = int.Parse(Console.ReadLine())
+            int n = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= n; i++)
+            for(int i = 1; i <= n; i++)
             {
+                Console.WriteLine($"Shape #{i} data:");
+
                 Console.Write("Rectangle or Circle (r/c)? ");
                 char s = char.Parse(Console.ReadLine());
 
@@ -39,6 +41,17 @@ namespace Abstract_method
 
                     list.Add(new Circle(color, r));
                 }
+
+                Console.WriteLine("-----------------------------------");
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("SHAPE AREAS: ");
+
+            foreach(Shape shap in list)
+            {
+                Console.WriteLine("Area: " + shap.Area().ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine();
             }
         }
     }

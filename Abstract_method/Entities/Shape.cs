@@ -31,5 +31,7 @@ namespace Abstract_method.Entities
             Shapes.Remove(shape);
         }
 
+        public abstract double Area();
+
     }
 }
